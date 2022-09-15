@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wnstjr541/typescript-note.git/static/css/main.0c62dc46.css",
+    "main.js": "/wnstjr541/typescript-note.git/static/js/main.e7cfafba.js",
+    "index.html": "/wnstjr541/typescript-note.git/index.html",
+    "main.0c62dc46.css.map": "/wnstjr541/typescript-note.git/static/css/main.0c62dc46.css.map",
+    "main.e7cfafba.js.map": "/wnstjr541/typescript-note.git/static/js/main.e7cfafba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c62dc46.css",
+    "static/js/main.e7cfafba.js"
+  ]
+}
