@@ -1,8 +1,7 @@
 import React from 'react';
 import { Todo } from '../model';
 import SingleTodo from './SingleTodo';
-import './styles.css'
-import { Droppable } from 'react-beautiful-dnd'
+import Complete from './Complete'
 
 interface Props {
     todos: Array<Todo>;
@@ -15,50 +14,34 @@ const TodoList = ({todos , setTodos , completed, setCompleted} : Props) => {
     return (
         <div className="container">
             {/* droppableId 이거 컴포넌트 이름 */}
-            <Droppable droppableId="TodoList">
-                {
-                    (provided)=>(
-                        <div className="todos" ref={provided.innerRef} {...provided.droppableProps}>
-                            <span className="todos__heading">
-                                Active Tasks
-                            </span>
-                            {
-                                todos?.map((todo , index) => 
-                                    <SingleTodo index={index} todo={todo} key={todo.id} todos={todos} setTodos={setTodos}></SingleTodo>
-                                )
-                            }
-                            {/* 빈자리 만들어 뜨는 현상 방지 */}
-                            {provided.placeholder}
-                        </div>
-                    )
-                }
-            </Droppable>
-            <Droppable droppableId="TodoRemove">
-                {(provided) => (
-                    <div className="todos remove" ref={provided.innerRef} {...provided.droppableProps}>
-                        <span className="todos__heading">
-                            completed Tasks
-                        </span>
-                        {
-                            completed?.map((todo , index) => 
-                                <SingleTodo index={index} todo={todo} key={todo.id} todos={completed} setTodos={setCompleted}></SingleTodo>
-                            )
-                        }
-                        {provided.placeholder}
-                    </div>
-                )}
-            </Droppable>
+            <div className='todos'>
+                <span className="todos__heading">Active Tasks</span>
+                {todos?.map((todo) => (
+                    todo.isDone === false && 
+                        <SingleTodo
+                            todos={todos}
+                            todo={todo}
+                            key={todo.id}
+                            setTodos={setTodos}
+                        />
+                ))}
+            </div>
+            <div className="todos remove">
+                <span className="todos__heading">
+                    completed Tasks
+                </span>
+                {todos?.map((todo) => (
+                    todo.isDone === true && 
+                        <Complete
+                            todos={todos}
+                            todo={todo}
+                            key={todo.id}
+                            setTodos={setTodos}
+                        />
+                ))}
+            </div>
         </div>
     );
 };
 
 export default TodoList;
-
-
-{/* <div className='todos'>
-{
-    todos?.map(todo => 
-        <SingleTodo todo={todo} key={todo.id} todos={todos} setTodos={setTodos}></SingleTodo>
-    )
-}
-</div> */}

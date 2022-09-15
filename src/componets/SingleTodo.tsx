@@ -8,10 +8,9 @@ interface Props {
     todo: Todo;
     todos: Todo[];
     setTodos : React.Dispatch<React.SetStateAction<Todo[]>>;
-    index: number
 }
 
-const SingleTodo = ({ index , todo , todos , setTodos}:Props) => {
+const SingleTodo = ({  todo , todos , setTodos}:Props) => {
 
     const inputRef = useRef<HTMLInputElement>(null);
     const [edit, setEdit] = useState<boolean>(false);
@@ -41,14 +40,8 @@ const SingleTodo = ({ index , todo , todos , setTodos}:Props) => {
     },[edit])
 
     return (
-        <Draggable draggableId={todo.id.toString()} index={index}>
-            {(provided) => (
-                <form className="todos__single" 
-                onSubmit={(e)=> handleEdit(e, todo.id)} 
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
-                    ref={provided.innerRef} 
-                >
+            <form className="todos__single" 
+                onSubmit={(e)=> handleEdit(e, todo.id)}>
                 {edit ? (
                     <input
                         value={editTodo}
@@ -81,8 +74,6 @@ const SingleTodo = ({ index , todo , todos , setTodos}:Props) => {
                     </div>
                 </span>
             </form>
-            )}
-        </Draggable>
     );
 };
 
