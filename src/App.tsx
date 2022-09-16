@@ -19,7 +19,6 @@ const App  = () => {
 
   return (
     <div className="App">
-        <h1>hello world </h1>
         <span className="heading">Taskify</span>
         <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}></InputFeild>
         <TodoList todos = {todos} setTodos = {setTodos} completed={completed} setCompleted={setCompleted}></TodoList>
