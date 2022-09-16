@@ -1,6 +1,6 @@
 .input {
     display: flex;
-    width: 95%;
+    width: 85%;
     position: relative;
     align-items: center;
 }
@@ -58,7 +58,7 @@
 }
 
 .container {
-    width: 95%;
+    width: 85%;
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
@@ -127,6 +127,9 @@
     cursor: pointer;
 }
 
+.icon__box{
+    width: 100%;
+}
 @media (max-width: 1100px) {
     .todos {
         width: 45%;
