@@ -9,7 +9,6 @@ interface Props {
     todos: Todo[];
     setTodos : React.Dispatch<React.SetStateAction<Todo[]>>;
 }
-
 const SingleTodo = ({  todo , todos , setTodos}:Props) => {
 
     const inputRef = useRef<HTMLInputElement>(null);

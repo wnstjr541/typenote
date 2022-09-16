@@ -13,7 +13,6 @@ interface Props {
 const TodoList = ({todos , setTodos , completed, setCompleted} : Props) => {
     return (
         <div className="container">
-            {/* droppableId 이거 컴포넌트 이름 */}
             <div className='todos'>
                 <span className="todos__heading">Active Tasks</span>
                 {todos?.map((todo) => (
