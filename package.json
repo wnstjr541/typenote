@@ -27,7 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/wnstjr541/typenote.git",
+  "homepage": "https://wnstjr541.github.io/typenote/",
   "eslintConfig": {
     "extends": [
       "react-app",
