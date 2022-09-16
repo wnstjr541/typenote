@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/typenote/static/css/main.40f08e91.css",
+    "main.css": "/typenote/static/css/main.ef26d98d.css",
     "main.js": "/typenote/static/js/main.0fb83adb.js",
     "index.html": "/typenote/index.html",
-    "main.40f08e91.css.map": "/typenote/static/css/main.40f08e91.css.map",
+    "main.ef26d98d.css.map": "/typenote/static/css/main.ef26d98d.css.map",
     "main.0fb83adb.js.map": "/typenote/static/js/main.0fb83adb.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f08e91.css",
+    "static/css/main.ef26d98d.css",
     "static/js/main.0fb83adb.js"
   ]
 }
