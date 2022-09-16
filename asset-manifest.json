@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wnstjr541/typenote.git/static/css/main.0c62dc46.css",
+    "main.css": "/wnstjr541/typenote.git/static/css/main.cf27fee4.css",
     "main.js": "/wnstjr541/typenote.git/static/js/main.0fb83adb.js",
     "index.html": "/wnstjr541/typenote.git/index.html",
-    "main.0c62dc46.css.map": "/wnstjr541/typenote.git/static/css/main.0c62dc46.css.map",
+    "main.cf27fee4.css.map": "/wnstjr541/typenote.git/static/css/main.cf27fee4.css.map",
     "main.0fb83adb.js.map": "/wnstjr541/typenote.git/static/js/main.0fb83adb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c62dc46.css",
+    "static/css/main.cf27fee4.css",
     "static/js/main.0fb83adb.js"
   ]
 }
