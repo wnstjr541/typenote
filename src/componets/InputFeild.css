@@ -5,19 +5,32 @@
     align-items: center;
 }
 
+/* 검색창 */
 .input__box {
-    width: 100%;
-    border-radius: 50px;
+    width: 90%;
+    border-radius: 50px 0 0 50px;
     padding: 20px 30px;
     font-size: 25px;
     border: none;
     transition: 0.2s;
     box-shadow: inset 0 0 5px black;
+    height: 40px;
 }
 
 .input__box:focus {
     box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
     outline: none;
+}
+
+/* 검색 버튼 */
+.input__submit{
+    width: 10%;
+    height: 80px;
+    border: none;
+    background: #fff;
+    box-shadow: inset 0 0 5px black;
+    border-radius:  0 50px 50px 0;
+    font-size: 20px;
 }
 
 .input_submit {
