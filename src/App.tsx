@@ -7,7 +7,6 @@ import { Todo } from './model';
 const App  = () => {
   const [todo , setTodo] = useState<string>("");
   const [todos , setTodos] = useState<Todo[]>([]);
-  const [completed , setCompleted] = useState<Todo[]>([]);
 
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,9 +18,9 @@ const App  = () => {
 
   return (
     <div className="App">
-        <span className="heading">Taskify</span>
+        <span className="heading">note</span>
         <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}></InputFeild>
-        <TodoList todos = {todos} setTodos = {setTodos} completed={completed} setCompleted={setCompleted}></TodoList>
+        <TodoList todos = {todos} setTodos = {setTodos} ></TodoList>
     </div>
   );
 }

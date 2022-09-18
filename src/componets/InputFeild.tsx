@@ -22,7 +22,7 @@ const InputFeild = ( {todo, setTodo , handleAdd} : Props) => {
             onChange={
                 (e) => setTodo(e.target.value)
             }
-            placeholder='Enter' className='input__box' />
+            placeholder='검색어를 입력하세요' className='input__box' />
             <button className='input__submit' type='submit'>Go</button>
         </form>
     );

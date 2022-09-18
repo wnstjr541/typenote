@@ -6,15 +6,13 @@ import Complete from './Complete'
 interface Props {
     todos: Array<Todo>;
     setTodos : React.Dispatch<React.SetStateAction<Todo[]>>;
-    completed : Array<Todo>;
-    setCompleted : React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-const TodoList = ({todos , setTodos , completed, setCompleted} : Props) => {
+const TodoList = ({todos , setTodos } : Props) => {
     return (
         <div className="container">
             <div className='todos'>
-                <span className="todos__heading">Active Tasks</span>
+                <span className="todos__heading">Active</span>
                 {todos?.map((todo) => (
                     todo.isDone === false && 
                         <SingleTodo
@@ -27,7 +25,7 @@ const TodoList = ({todos , setTodos , completed, setCompleted} : Props) => {
             </div>
             <div className="todos remove">
                 <span className="todos__heading">
-                    completed Tasks
+                    complete
                 </span>
                 {todos?.map((todo) => (
                     todo.isDone === true && 
